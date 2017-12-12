@@ -7,4 +7,18 @@
 </div>
 <p>Mariza</p>
 
+<p>Video title: {{video.title}}</p>
+<p>Views: {{video.views}}</p>
+<p>Liked: {{video.liked}}</p>
 
+<button (click)="handleClick()">Console log me</button>
+
+<ul>
+  <li *ngFor="let video of videos">
+    Name: {{video.name}}
+    Liked: {{video.liked}}
+    {{video.name}}
+  </li>
+</ul>
+
+<p *ngIf="isShown">This should be hidden or shown</p>
